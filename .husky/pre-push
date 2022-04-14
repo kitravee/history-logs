@@ -1,0 +1,9 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+echo '🏗️👷 ./husky/pre-push'
+
+yarn check-format
+yarn check-lint
+yarn check-types
+# yarn build
