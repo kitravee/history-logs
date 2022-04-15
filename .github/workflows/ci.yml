@@ -2,10 +2,10 @@ name: CI
 on:
   push:
     branches:
-      - master
+      - main
   pull_request:
     branches:
-      - master
+      - main
 jobs:
   all-cli-check:
     runs-on: ubuntu-latest
@@ -13,9 +13,9 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2-beta
         with:
-          node-version: '14.16'
+          node-version: '16.13'
       - run: mv .env.example .env
-      - run: yarn
+      - run: yarn install
       - run: yarn build
       # - run: yarn test:jest
       - run: yarn check-lint
