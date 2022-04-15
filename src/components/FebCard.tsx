@@ -3,7 +3,6 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import React from 'react';
 
 import { Image } from '@/types/image';
 
@@ -13,15 +12,6 @@ interface FebCardProps {
   title?: string;
   subtitle?: string;
 }
-
-// const Div = styled('div')<{ active_route?: string }>(
-//   ({ theme, active_route }) => ({
-//     '&:hover': {
-//       color: `${theme.palette.primary.main} !important`,
-//     },
-//     color: active_route === 'active' ? theme.palette.primary.main : 'inherit',
-//   }),
-// );
 
 export const FebCard: React.FC<FebCardProps> = ({ image }) => {
   return (
@@ -46,5 +36,3 @@ export const FebCard: React.FC<FebCardProps> = ({ image }) => {
     </Card>
   );
 };
-
-export default FebCard;

@@ -18,7 +18,7 @@ interface SwipeableSlideDrawerProp {
   list: NavMenuList[];
 }
 
-const SwipeableSlideDrawer: React.FC<SwipeableSlideDrawerProp> = ({
+export const SwipeableSlideDrawer: React.FC<SwipeableSlideDrawerProp> = ({
   anchor = 'left',
   children,
   list,
@@ -89,5 +89,3 @@ const SwipeableSlideDrawer: React.FC<SwipeableSlideDrawerProp> = ({
     </div>
   );
 };
-
-export default SwipeableSlideDrawer;

@@ -5,7 +5,6 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/system/Box';
 import { motion } from 'framer-motion';
 import NextImage from 'next/image';
-import React from 'react';
 
 export const Hero: React.FC = () => {
   return (

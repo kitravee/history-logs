@@ -1,7 +1,6 @@
 import GitHubIcon from '@mui/icons-material/GitHub';
 import { Container, IconButton, Typography } from '@mui/material';
 import Box from '@mui/system/Box';
-import React from 'react';
 
 import GradientSection from '@/components/box-gradient';
 
@@ -9,7 +8,7 @@ interface FooterProps {
   className?: string;
 }
 
-const Footer: React.FC<FooterProps> = () => {
+export const Footer: React.FC<FooterProps> = () => {
   return (
     <GradientSection alignItems="center" display="flex" justifyContent="center">
       <Container>
@@ -25,5 +24,3 @@ const Footer: React.FC<FooterProps> = () => {
     </GradientSection>
   );
 };
-
-export default Footer;

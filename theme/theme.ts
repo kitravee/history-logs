@@ -53,7 +53,7 @@ const customTheme = createTheme({
 });
 
 // Create a theme instance.
-const febLuffyTheme = createTheme({
+const historyLogTemplate = createTheme({
   palette: {
     primary: {
       ...primary,
@@ -147,26 +147,6 @@ const febLuffyTheme = createTheme({
   components: {
     MuiCssBaseline: {
       styleOverrides: {
-        ul: {
-          margin: 0,
-          padding: 0,
-          listStyle: 'none',
-        },
-        p: {
-          lineHeight: 1.75,
-        },
-        a: {
-          textDecoration: 'none',
-          color: 'inherit',
-        },
-        button: {
-          fontFamily: fontFamily2,
-          fontSize,
-        },
-
-        '.MuiRating-sizeSmall': {
-          fontSize: '20px',
-        },
         '#nprogress': {
           position: 'relative',
           zIndex: 1231,
@@ -186,68 +166,10 @@ const febLuffyTheme = createTheme({
         },
       },
     },
-    MuiPagination: {
-      defaultProps: {
-        variant: 'outlined',
-        color: 'primary',
-      },
-    },
-    MuiTextField: {
-      defaultProps: {
-        size: 'small',
-        variant: 'outlined',
-      },
-    },
-    MuiMenuItem: {
-      styleOverrides: {
-        root: {
-          paddingTop: 8,
-          paddingBottom: 8,
-        },
-      },
-    },
-    MuiButton: {
-      styleOverrides: {
-        root: {
-          fontWeight: 600,
-          textTransform: 'capitalize',
-          minWidth: 0,
-          minHeight: 0,
-          borderRadius: 8,
-        },
-      },
-      defaultProps: {
-        color: 'inherit',
-      },
-    },
-    MuiCard: {
-      styleOverrides: {
-        root: {
-          borderRadius: '8px',
-        },
-      },
-    },
-    MuiContainer: {
-      styleOverrides: {
-        root: {
-          [customTheme.breakpoints.up('sm')]: {
-            paddingLeft: '1rem',
-            paddingRight: '1rem',
-          },
-        },
-      },
-    },
-    MuiDialog: {
-      styleOverrides: {
-        paper: {
-          borderRadius: 8,
-        },
-      },
-    },
   },
 });
 
-const theme = { ...customTheme, ...febLuffyTheme };
+const theme = { ...customTheme, ...historyLogTemplate };
 
 theme.shadows[1] = '0px 1px 3px rgba(3, 0, 71, 0.09)';
 theme.shadows[2] = '0px 4px 16px rgba(43, 52, 69, 0.1)';

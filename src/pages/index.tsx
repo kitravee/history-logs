@@ -5,7 +5,6 @@ import { PageComponent } from '@/types/next-page';
 import HomeView from '@/views/home-view';
 
 const Home: PageComponent = () => {
-  // console.log(props);
   return (
     <>
       <Head>
@@ -23,13 +22,3 @@ Home.getLayout = (page) => {
 Home.auth = false;
 
 export default Home;
-
-// export const getServerSideProps: GetServerSideProps = async (_context) => {
-//   return {
-//     props: {
-//       someProps: 'someProps',
-//     },
-//   };
-// };
-
-// export default Home;

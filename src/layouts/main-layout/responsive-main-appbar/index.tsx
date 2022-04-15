@@ -9,9 +9,8 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import useScrollTrigger from '@mui/material/useScrollTrigger';
 import router from 'next/router';
-import * as React from 'react';
 
-import SwipeableTemporaryDrawer from './swipeable-slide-drawer';
+import { SwipeableSlideDrawer } from './swipeable-slide-drawer';
 
 export type NavMenuList = {
   href: string;
@@ -27,7 +26,7 @@ interface ResponsiveMainAppBarProps {
   className?: string;
 }
 
-const ResponsiveMainAppBar: React.FC<ResponsiveMainAppBarProps> = ({
+export const ResponsiveMainAppBar: React.FC<ResponsiveMainAppBarProps> = ({
   className,
 }) => {
   const onScrollTrigger = useScrollTrigger({
@@ -55,11 +54,11 @@ const ResponsiveMainAppBar: React.FC<ResponsiveMainAppBarProps> = ({
           </Typography>
 
           <Box sx={{ display: { md: 'none', xs: 'flex' }, flexGrow: 1 }}>
-            <SwipeableTemporaryDrawer anchor="left" list={list}>
+            <SwipeableSlideDrawer anchor="left" list={list}>
               <IconButton aria-haspopup="true" color="inherit" size="large">
                 <MenuIcon />
               </IconButton>
-            </SwipeableTemporaryDrawer>
+            </SwipeableSlideDrawer>
           </Box>
 
           <Typography
@@ -96,5 +95,3 @@ const ResponsiveMainAppBar: React.FC<ResponsiveMainAppBarProps> = ({
     </AppBar>
   );
 };
-
-export default ResponsiveMainAppBar;

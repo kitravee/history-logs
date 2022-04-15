@@ -7,7 +7,6 @@ import InputAdornment from '@mui/material/InputAdornment';
 import OutlinedInput from '@mui/material/OutlinedInput';
 import Typography from '@mui/material/Typography';
 import { Box } from '@mui/system';
-import React from 'react';
 
 export const SubScribe: React.FC = () => {
   return (

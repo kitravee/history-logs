@@ -13,7 +13,8 @@
       "\tres: NextApiResponse<${TM_FILENAME_BASE/(.*)$/${1:/capitalize}/}Data>,",
       ") {",
       "\tres.status(200).json({ name: 'John Doe' });",
-      "}"
+      "}",
+      ""
     ],
     "description": "Freshket Typescript React Function Component"
   }
