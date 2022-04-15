@@ -58,6 +58,6 @@
       "",
       "export default ${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/g};"
     ],
-    "description": "Typescript Page"
+    "description": "Next.js Page"
   }
 }
