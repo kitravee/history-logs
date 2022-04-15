@@ -1,7 +1,8 @@
-import { createEmotionCache } from '@/lib/emotion';
-import React from 'react';
-import Document, { Html, Head, Main, NextScript } from 'next/document';
 import createEmotionServer from '@emotion/server/create-instance';
+import Document, { Html, Head, Main, NextScript } from 'next/document';
+import React from 'react';
+
+import { createEmotionCache } from '@/lib/emotion';
 
 // https://mui.com/styles/advanced/#next-js
 export default class MyDocument extends Document {
@@ -17,10 +18,6 @@ export default class MyDocument extends Document {
           />
           <link
             href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;700&display=swap"
-            rel="stylesheet"
-          />
-          <link
-            href="https://fonts.googleapis.com/icon?family=Material+Icons"
             rel="stylesheet"
           />
         </Head>

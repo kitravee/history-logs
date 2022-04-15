@@ -1,6 +1,7 @@
-import MainAppBar from './responsive-main-appbar';
-import Footer from './footer';
 import React from 'react';
+
+import Footer from './footer';
+import MainAppBar from './responsive-main-appbar';
 
 interface MainLayoutProps {
   className?: string;

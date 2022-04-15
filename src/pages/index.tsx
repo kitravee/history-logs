@@ -1,7 +1,8 @@
-import { PageComponent } from '@/types/next-page';
-import HomeView from '@/views/home-view';
 import { Box } from '@mui/system';
 import Head from 'next/head';
+
+import { PageComponent } from '@/types/next-page';
+import HomeView from '@/views/home-view';
 
 const Home: PageComponent = () => {
   // console.log(props);

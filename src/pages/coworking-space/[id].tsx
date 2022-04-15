@@ -1,6 +1,7 @@
-import CoworkingSpaceView from '@/views/coworking-space-view';
-import React from 'react';
 import Head from 'next/head';
+import React from 'react';
+
+import CoworkingSpaceView from '@/views/coworking-space-view';
 // import { GetStaticProps, GetServerSideProps } from 'next';
 
 const CoworkingSpaceId: React.FC = () => {

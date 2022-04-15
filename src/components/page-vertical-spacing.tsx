@@ -1,5 +1,5 @@
-import React from 'react';
 import Box from '@mui/system/Box';
+import React from 'react';
 
 interface PageVerticalSpacingProps {
   className?: string;

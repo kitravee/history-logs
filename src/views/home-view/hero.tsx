@@ -1,11 +1,11 @@
-import React from 'react';
-import NextImage from 'next/image';
-import Box from '@mui/system/Box';
-import { motion } from 'framer-motion';
-import Typography from '@mui/material/Typography';
+import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
-import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
+import Box from '@mui/system/Box';
+import { motion } from 'framer-motion';
+import NextImage from 'next/image';
+import React from 'react';
 
 export const Hero: React.FC = () => {
   return (

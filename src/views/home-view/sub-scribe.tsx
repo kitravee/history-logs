@@ -1,13 +1,13 @@
-import React from 'react';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
+import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
+import FormControl from '@mui/material/FormControl';
 import Grid from '@mui/material/Grid';
+import InputAdornment from '@mui/material/InputAdornment';
+import OutlinedInput from '@mui/material/OutlinedInput';
 import Typography from '@mui/material/Typography';
 import { Box } from '@mui/system';
-import FormControl from '@mui/material/FormControl';
-import OutlinedInput from '@mui/material/OutlinedInput';
-import InputAdornment from '@mui/material/InputAdornment';
-import Button from '@mui/material/Button';
+import React from 'react';
 
 export const SubScribe: React.FC = () => {
   return (

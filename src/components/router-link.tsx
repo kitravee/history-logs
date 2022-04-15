@@ -1,8 +1,8 @@
-import React from 'react';
-import NextLink, { LinkProps as NextLinkProps } from 'next/link';
-import MuiLink, { LinkProps as MuiLinkProps } from '@mui/material/Link';
-
 import { UrlObject } from 'url';
+
+import MuiLink, { LinkProps as MuiLinkProps } from '@mui/material/Link';
+import NextLink, { LinkProps as NextLinkProps } from 'next/link';
+import React from 'react';
 
 interface RouterLinkProps {
   className?: string;

@@ -1,8 +1,9 @@
-import GradientSection from '@/components/BoxGradient';
-import React from 'react';
-import { Container, IconButton, Typography } from '@mui/material';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import { Container, IconButton, Typography } from '@mui/material';
 import Box from '@mui/system/Box';
+import React from 'react';
+
+import GradientSection from '@/components/box-gradient';
 
 interface FooterProps {
   className?: string;

@@ -1,16 +1,17 @@
-import SwipeableTemporaryDrawer from './swipeable-slide-drawer';
-import * as React from 'react';
+import MenuIcon from '@mui/icons-material/Menu';
+import PeopleOutlineIcon from '@mui/icons-material/PeopleOutline';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
-import MenuIcon from '@mui/icons-material/Menu';
-import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
-import PeopleOutlineIcon from '@mui/icons-material/PeopleOutline';
-import router from 'next/router';
+import Container from '@mui/material/Container';
+import IconButton from '@mui/material/IconButton';
+import Toolbar from '@mui/material/Toolbar';
+import Typography from '@mui/material/Typography';
 import useScrollTrigger from '@mui/material/useScrollTrigger';
+import router from 'next/router';
+import * as React from 'react';
+
+import SwipeableTemporaryDrawer from './swipeable-slide-drawer';
 
 export type NavMenuList = {
   href: string;

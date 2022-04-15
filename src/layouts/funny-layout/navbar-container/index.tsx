@@ -1,11 +1,12 @@
-import { HideOnScroll } from './HideOnScroll';
-import React, { ReactNode } from 'react';
-import useScrollTrigger from '@mui/material/useScrollTrigger';
 import AppBar from '@mui/material/AppBar';
-import Toolbar from '@mui/material/Toolbar';
 import Container from '@mui/material/Container';
+import Toolbar from '@mui/material/Toolbar';
+import useScrollTrigger from '@mui/material/useScrollTrigger';
 import { motion } from 'framer-motion';
+import React, { ReactNode } from 'react';
 import type { FC } from 'react';
+
+import { HideOnScroll } from './HideOnScroll';
 
 interface NavbarContainerProps {
   children?: ReactNode;

@@ -1,16 +1,14 @@
-import FebCard from '@/components/FebCard';
-import { PageVerticalSpacing } from '@/components/PageVerticalSpacing';
-// import LineChart from '@/components/chart/LineChart';
-// import AreaBump from '@/components/chart/AreaBump';
-
-import React from 'react';
-import Paper from '@mui/material/Paper';
-import Drawer from '@mui/material/Drawer';
-import Box from '@mui/system/Box';
-import Container from '@mui/material/Container';
-import Grid from '@mui/material/Grid';
-import Typography from '@mui/material/Typography';
 import { NoSsr } from '@mui/material';
+import Container from '@mui/material/Container';
+import Drawer from '@mui/material/Drawer';
+import Grid from '@mui/material/Grid';
+import Paper from '@mui/material/Paper';
+import Typography from '@mui/material/Typography';
+import Box from '@mui/system/Box';
+import React from 'react';
+
+import FebCard from '@/components/febcard';
+import { PageVerticalSpacing } from '@/components/page-vertical-spacing';
 
 interface CoworkingSpaceViewProps {
   className?: string;

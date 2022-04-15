@@ -1,7 +1,9 @@
-import { NavContent } from './nav-content';
-import { NavbarContainer } from '@/layouts/funny-layout/navbar-container';
 import React, { ReactNode } from 'react';
 import type { FC } from 'react';
+
+import { NavbarContainer } from '@/layouts/funny-layout/navbar-container';
+
+import { NavContent } from './nav-content';
 
 interface MainLayoutProps {
   children?: ReactNode;

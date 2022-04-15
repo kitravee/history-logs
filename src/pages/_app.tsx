@@ -1,12 +1,13 @@
-import { PageComponent } from '@/types/next-page';
-import { EmotionCacheProvider } from '@/lib/emotion';
-import { MainThemeProvider } from '~/theme/main-theme-provider';
-import nProgress from 'nprogress';
-import 'nprogress/nprogress.css';
-import { Router } from 'next/router';
-
 import { EmotionCache } from '@emotion/cache';
 import type { AppProps } from 'next/app';
+import { Router } from 'next/router';
+import nProgress from 'nprogress';
+
+import { EmotionCacheProvider } from '@/lib/emotion';
+import { PageComponent } from '@/types/next-page';
+import { MainThemeProvider } from '~/theme/main-theme-provider';
+
+import 'nprogress/nprogress.css';
 
 // Client-side cache, shared for the whole session of the user in the browser.
 // const clientSideEmotionCache = createEmotionCache();

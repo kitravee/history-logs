@@ -1,4 +1,6 @@
 /* eslint-disable sort-keys-fix/sort-keys-fix */
+import { createTheme, Theme } from '@mui/material/styles';
+
 import {
   error,
   grey,
@@ -7,7 +9,6 @@ import {
   success,
   warning,
 } from './theme-colors';
-import { createTheme, Theme } from '@mui/material/styles';
 
 const fontSize = 14;
 

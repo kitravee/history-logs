@@ -35,25 +35,11 @@
     }
   },
   "plugins": ["sort-keys-fix", "import", "react"],
+
   "rules": {
-    "import/order": [
-      "warn",
-      {
-        "groups": [
-          "index",
-          "sibling",
-          "parent",
-          "internal",
-          "external",
-          "builtin",
-          "object",
-          "type"
-        ]
-      }
-    ],
-    "import/extensions": "off",
     "no-use-before-define": "off",
     "no-plusplus": "off",
+    "sort-keys-fix/sort-keys-fix": "warn",
     "no-console": [
       2,
       {
@@ -61,8 +47,31 @@
       }
     ],
     "no-nested-ternary": "off",
+
+    "import/order": [
+      "warn",
+      {
+        "groups": [
+          "builtin",
+          "external",
+          "internal",
+          "parent",
+          "sibling",
+          "index",
+          "object"
+        ],
+        "newlines-between": "always",
+        "alphabetize": { "order": "asc", "caseInsensitive": true }
+      }
+    ],
     "import/prefer-default-export": "off",
+    "import/extensions": "off",
+    "import/default": "off",
+    "import/no-named-as-default-member": "off",
+    "import/no-named-as-default": "off",
+
     "react-hooks/exhaustive-deps": "off",
+    "react/jsx-no-duplicate-props": [2, { "ignoreCase": false }],
     "react/jsx-filename-extension": "off",
     "react/jsx-props-no-spreading": "off",
     "react/require-default-props": "off",
@@ -78,10 +87,12 @@
       }
     ],
     "react/no-array-index-key": "warn",
+
     "jsx-a11y/click-events-have-key-events": "off",
     "jsx-a11y/no-static-element-interactions": "off",
     "jsx-a11y/control-has-associated-label": "off",
     "jsx-a11y/anchor-is-valid": "off",
+
     "@typescript-eslint/ban-types": "off",
     "@typescript-eslint/no-use-before-define": "off",
     "@typescript-eslint/no-unused-vars": [
@@ -95,19 +106,12 @@
       "error",
       { "allowShortCircuit": true, "allowTernary": true }
     ],
-    "@typescript-eslint/no-explicit-any": "off",
     "@typescript-eslint/no-shadow": "off",
-    "react/jsx-no-duplicate-props": [2, { "ignoreCase": false }],
-    "sort-keys-fix/sort-keys-fix": "warn"
+    "@typescript-eslint/explicit-function-return-type": ["off"],
+    "@typescript-eslint/explicit-module-boundary-types": ["off"],
+    "@typescript-eslint/no-empty-function": ["off"],
+    "@typescript-eslint/no-explicit-any": ["off"]
   },
-  "overrides": [
-    {
-      "files": ["page/*.ts", "page/*.tsx", "src/*.ts", "src/*.tsx"],
-      "rules": {
-        "sort-keys-fix/sort-keys-fix": "warn"
-      }
-    }
-  ],
   "settings": {
     "react": {
       "version": "detect"
