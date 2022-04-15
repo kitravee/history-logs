@@ -1,20 +1,17 @@
-import MainAppBar from './responsive-main-appbar';
-import Footer from './footer';
-import React from 'react';
+import { Footer } from './footer';
+import { ResponsiveMainAppBar } from './responsive-main-appbar';
 
 interface MainLayoutProps {
   className?: string;
   children?: React.ReactNode;
 }
 
-const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
+export const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
   return (
-    <React.Fragment>
-      <MainAppBar />
+    <>
+      <ResponsiveMainAppBar />
       {children}
       <Footer />
-    </React.Fragment>
+    </>
   );
 };
-
-export default MainLayout;

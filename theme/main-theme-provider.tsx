@@ -1,9 +1,10 @@
-import theme from './theme';
 import { CssBaseline } from '@mui/material';
 import { ThemeProvider } from '@mui/material/styles';
-import React from 'react';
+import { FC } from 'react';
 
-export const MainThemeProvider: React.FC = ({ children }) => {
+import theme from './theme';
+
+export const MainThemeProvider: FC = ({ children }) => {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />

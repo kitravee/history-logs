@@ -1,6 +1,7 @@
-import { createEmotionCache } from './emotion';
 import { CacheProvider, EmotionCache } from '@emotion/react';
 import { FC } from 'react';
+
+import { createEmotionCache } from './emotion';
 
 type Props = {
   emotionCache?: EmotionCache;

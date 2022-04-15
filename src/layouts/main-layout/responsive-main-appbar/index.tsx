@@ -1,16 +1,16 @@
-import SwipeableTemporaryDrawer from './swipeable-slide-drawer';
-import * as React from 'react';
+import MenuIcon from '@mui/icons-material/Menu';
+import PeopleOutlineIcon from '@mui/icons-material/PeopleOutline';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
-import MenuIcon from '@mui/icons-material/Menu';
-import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
-import PeopleOutlineIcon from '@mui/icons-material/PeopleOutline';
-import router from 'next/router';
+import Container from '@mui/material/Container';
+import IconButton from '@mui/material/IconButton';
+import Toolbar from '@mui/material/Toolbar';
+import Typography from '@mui/material/Typography';
 import useScrollTrigger from '@mui/material/useScrollTrigger';
+import router from 'next/router';
+
+import { SwipeableSlideDrawer } from './swipeable-slide-drawer';
 
 export type NavMenuList = {
   href: string;
@@ -26,7 +26,7 @@ interface ResponsiveMainAppBarProps {
   className?: string;
 }
 
-const ResponsiveMainAppBar: React.FC<ResponsiveMainAppBarProps> = ({
+export const ResponsiveMainAppBar: React.FC<ResponsiveMainAppBarProps> = ({
   className,
 }) => {
   const onScrollTrigger = useScrollTrigger({
@@ -54,11 +54,11 @@ const ResponsiveMainAppBar: React.FC<ResponsiveMainAppBarProps> = ({
           </Typography>
 
           <Box sx={{ display: { md: 'none', xs: 'flex' }, flexGrow: 1 }}>
-            <SwipeableTemporaryDrawer anchor="left" list={list}>
+            <SwipeableSlideDrawer anchor="left" list={list}>
               <IconButton aria-haspopup="true" color="inherit" size="large">
                 <MenuIcon />
               </IconButton>
-            </SwipeableTemporaryDrawer>
+            </SwipeableSlideDrawer>
           </Box>
 
           <Typography
@@ -95,5 +95,3 @@ const ResponsiveMainAppBar: React.FC<ResponsiveMainAppBarProps> = ({
     </AppBar>
   );
 };
-
-export default ResponsiveMainAppBar;
