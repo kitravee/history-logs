@@ -1,6 +1,6 @@
-import { Box } from '@mui/system';
 import Head from 'next/head';
 
+import { MainLayout } from '@/layouts/main-layout';
 import { PageComponent } from '@/types/next-page';
 import HomeView from '@/views/home-view';
 
@@ -16,7 +16,7 @@ const Home: PageComponent = () => {
 };
 
 Home.getLayout = (page) => {
-  return <Box sx={{ bgcolor: 'background.default' }}>{page}</Box>;
+  return <MainLayout>{page}</MainLayout>;
 };
 
 Home.auth = false;

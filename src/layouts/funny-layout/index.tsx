@@ -11,11 +11,11 @@ interface MainLayoutProps {
 
 export const MainLayout: FC<MainLayoutProps> = ({ children }) => {
   return (
-    <div>
+    <>
       <NavbarContainer>
         <NavContent />
       </NavbarContainer>
       <div>{children}</div>
-    </div>
+    </>
   );
 };
