@@ -1,5 +1,6 @@
 import { DefaultOptions, UseQueryOptions } from 'react-query';
 
+// client query
 export const queryConfig: DefaultOptions = {
   queries: {
     refetchOnWindowFocus: false,
